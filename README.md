@@ -48,8 +48,8 @@ Currently developing my expertise in:
 
 | Project | Description | Tools |
 |----------|--------------|-------|
-| [🔹 Splunk Labs](https://github.com/Emmanuel-Ngari/Splunk-Labs) | Configured SIEM environment to collect and analyze logs from Windows endpoints. Built custom dashboards for authentication and security events. | Splunk, Windows Event Logs |
-| [🔹 Network Analysis Labs](https://github.com/Emmanuel-Ngari/Network-Analysis) | Captured, filtered, and analyzed real network traffic to identify suspicious activities and understand protocol behavior. | Wireshark, Kali Linux, Ubuntu |
+| [🔹 Splunk Labs](https://github.com/Emmanuel-Ngari/Emmanuel-Ngari/tree/0ab432977396047e21bc309cf4b525c1e8e88cb2/Splunk-Labs) | Configured SIEM environment to collect and analyze logs from Windows endpoints. Built custom dashboards for authentication and security events. | Splunk, Windows Event Logs |
+| [🔹 Network Analysis Labs](https://github.com/Emmanuel-Ngari/Emmanuel-Ngari/tree/0ab432977396047e21bc309cf4b525c1e8e88cb2/Network-Analysis) | Captured, filtered, and analyzed real network traffic to identify suspicious activities and understand protocol behavior. | Wireshark, Kali Linux, Ubuntu |
 
 ---
 
