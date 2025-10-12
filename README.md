@@ -1,35 +1,43 @@
-# Emmanuel-Patrick-Ngari
-# 👋 Hi, I'm Emmanuel Patrick Ngari
+# 👋 Hi, I'm Lord Emmanuel  
 
-🎯 Cybersecurity Analyst | SOC & Network Security Enthusiast | SOC Specialist
+🎯 **Cybersecurity Analyst | SOC & SIEM Enthusiast | Splunk | Wireshark | Threat Detection**
 
-I'm currently advancing through a structured cybersecurity learning path — mastering the tools, skills, and analysis methods used by modern security professionals.  
-This repository serves as my **Cybersecurity Journey Log**, documenting everything from hands-on labs to analytical projects.
-
----
-
-## 🧰 Current Skills & Tools
-- Networking:** TCP/IP, DNS, DHCP, ICMP, ARP
-- Security Tools:** Wireshark, Nmap, Splunk, Cisco Packet Tracer
-- Operating Systems:** Linux (Ubuntu), Windows 10
-- Scripting:** Python (Beginner)
-- Security Domains:** Network Security, Threat Detection, Incident Response
+Welcome to my Cybersecurity Portfolio.  
+This profile documents my **hands-on learning journey** in cybersecurity — covering Splunk, Network Traffic Analysis, and Incident Response.
 
 ---
 
-## 📚 Learning Roadmap
-1. Cybersecurity Fundamentals ✅  
-2. Network Analysis & Wireshark ✅  
-3. System & Log Analysis (Splunk) 🔄  
-4. Vulnerability Scanning (Nmap) 🔜  
-5. Incident Response & Reporting 🔜  
+## 🧠 About Me
+- Passionate about **security monitoring**, **threat detection**, and **log analysis**
+- Learning through real-world **SOC simulations and network labs**
+- Currently building **Splunk and Wireshark projects** weekly
+- Focused on becoming a **SOC Analyst (Tier 1/2)** and **Ethical Hacker**
 
 ---
 
-## 📁 Featured Projects
-- [Week 1 — Networking Basics & IP Configuration](#)
-- [Week 2 — Network Traffic Analysis with Wireshark](#)
-- [Week 3 — Windows Log Analysis with Splunk](#)
+## 🔧 Technical Skills
+| Category | Tools / Knowledge |
+|-----------|------------------|
+| **SIEM Tools** | Splunk, ELK Stack (Learning) |
+| **Network Security** | Wireshark, Nmap, TCP/IP |
+| **OS** | Windows 10, Ubuntu, Kali Linux |
+| **Scripting** | Python (for security automation) |
+| **Other Skills** | Incident Detection, Log Correlation, Dashboard Creation |
+
+---
+
+## 📘 Learning Path
+1. Week 1 — Splunk Fundamentals ✅  
+2. Week 2 — Wireshark Traffic Analysis ✅  
+3. Week 3 — Log Correlation & Threat Detection 🔄  
+4. Week 4 — Vulnerability Scanning & Hardening 🔜  
+
+---
+
+## 🧩 Featured Projects
+- [Splunk Fundamentals (Week 1)](#)
+- [Wireshark Network Analysis (Week 2)](#)
+- [Upcoming: Threat Correlation with Splunk (Week 3)](#)
 
 ---
 
