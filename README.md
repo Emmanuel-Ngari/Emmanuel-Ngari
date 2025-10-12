@@ -41,10 +41,5 @@ For every skill or lab I:
 ---
 
 ## Contact
-- LinkedIn: *add your LinkedIn URL here*  
-- Email: *add your preferred email here*
-
-> *Want to see a specific lab documented? Ask and I’ll generate the template for that lab (Splunk, Wireshark, IR report, etc.)*
-📫 **Connect with me:**
-- [LinkedIn](www.linkedin.com/in/emmanuelngari)
-- [Email](emmanuelpatrick377@gmail.com)
+- LinkedIn: *www.linkedin.com/in/emmanuelngari*  
+- Email: *emmanuelpatrick377@gmail.com*
