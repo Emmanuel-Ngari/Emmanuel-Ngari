@@ -1,45 +1,72 @@
-# Emmanuel Patrick Ngari — Cybersecurity Portfolio
 
-**Cybersecurity Analyst (SOC) in training · Threat Detection · Incident Response**
-
----
-
-## About Me
-I’m a dedicated cybersecurity practitioner building hands-on experience in security monitoring, incident response, and network analysis.  
-This repository documents my labs, projects, scripts, and reports as I progress toward a professional SOC Analyst / Cybersecurity Analyst role.
+# 👋 Hi, I'm Emmanuel Patrick Ngari  
+🎯 **Cybersecurity Analyst | SOC Analyst | Threat Detection Specialist**
 
 ---
 
-## Core Focus Areas
-- **Security Monitoring & SIEM:** Splunk — log ingestion, SPL searches, dashboards, and detection.
-- **Network Analysis:** Wireshark, Nmap — packet capture, protocol analysis, scanning and reconnaissance.
-- **Endpoint & OS:** Windows & Linux (Ubuntu, Kali) — log sources, process monitoring, OS artifacts.
-- **Incident Response:** Triage, timeline building, containment & reporting.
-- **Automation & Scripting:** Python for parsing, alert enrichment and data processing.
-- **Tools:** VirtualBox, Splunk Enterprise, Splunk Universal Forwarder, Wireshark, Hydra (ethical testing), Nmap, Suricata/Snort.
+## 👨‍💻 About Me
+I'm a passionate **Cybersecurity Analyst** focused on protecting digital infrastructures through **threat detection, incident response, and network forensics**.  
+With practical experience in **Splunk, Wireshark, Kali Linux, and Windows event monitoring**, I enjoy turning complex data into actionable insights that strengthen organizational security.
+
+Currently developing my expertise in:
+- 🧠 Security Operations & SIEM (Splunk, ELK Stack)  
+- 🌐 Network Traffic Analysis & Packet Capture  
+- 🧩 Vulnerability Management & Endpoint Security  
+- 🚨 Incident Response & Threat Hunting  
+
+> “Security is not a product — it’s a continuous process.”  
 
 ---
 
-## Repository Structure
-```
-/Splunk-Labs             - Splunk setups, dashboards, searches and detection logic
-/Network-Analysis        - Wireshark captures, packet analysis guides, Nmap scans
-/Python-Scripts          - Automation scripts for parsing/analysis
-/Incident-Response       - SOC case studies, playbooks, reports
-/Certifications          - Certificate proofs and links
-README.md                - This main overview
-```
+## 🧩 Technical Skills
+
+| Domain | Tools & Skills |
+|--------|----------------|
+| **Security Operations** | Splunk, SIEM Management, Log Analysis |
+| **Network Analysis** | Wireshark, Nmap, Tcpdump |
+| **Endpoint Security** | Windows Event Logs, Sysmon, MITRE ATT&CK |
+| **Threat Hunting** | Indicators of Compromise (IoCs), Log Correlation |
+| **Vulnerability Assessment** | Nessus, OpenVAS *(in progress)* |
+| **Scripting & Automation** | Python for Security, Bash |
+| **Operating Systems** | Kali Linux, Ubuntu, Windows 10 |
+| **Version Control & Documentation** | Git, GitHub, Markdown |
 
 ---
 
-## How I document work
-For every skill or lab I:
-1. Add a clear short README in the related folder.
-2. Include objectives, tools, commands, screenshots, and lessons learned.
-3. Keep commits atomic and documented.
+## 🧠 Certifications & Learning Path
+
+- 🏅 **Google Cybersecurity Professional Certificate**  
+- 🎓 **Cisco Networking Academy Courses:**
+  - Introduction to Cybersecurity  
+  - Networking Basics  
+  - Python Essentials 1  
+- 🔐 **Currently Working Toward:** CompTIA Security+  
 
 ---
 
-## Contact
-- LinkedIn: *www.linkedin.com/in/emmanuelngari*  
-- Email: *emmanuelpatrick377@gmail.com*
+## 📘 Featured Projects
+
+| Project | Description | Tools |
+|----------|--------------|-------|
+| [🔹 Splunk Labs](https://github.com/Emmanuel-Ngari/Splunk-Labs) | Configured SIEM environment to collect and analyze logs from Windows endpoints. Built custom dashboards for authentication and security events. | Splunk, Windows Event Logs |
+| [🔹 Network Analysis Labs](https://github.com/Emmanuel-Ngari/Network-Analysis) | Captured, filtered, and analyzed real network traffic to identify suspicious activities and understand protocol behavior. | Wireshark, Kali Linux, Ubuntu |
+
+---
+
+## 🧰 Tools & Technologies
+**SIEM Tools:** Splunk · ELK Stack  
+**Networking:** Wireshark · Nmap · Tcpdump  
+**Operating Systems:** Kali Linux · Ubuntu · Windows 10  
+**Languages:** Python · Bash  
+**Version Control:** Git · GitHub  
+
+---
+
+## 📫 Connect With Me
+- 💼 [LinkedIn](https://www.linkedin.com/in/emmanuelngari)  
+- 📧 **emmanuelpatrick377@gmail.com**  
+- 🌍 Port Harcourt, Nigeria  
+
+---
+
+> 💡 *“Every packet tells a story — and every log hides a clue.”*
