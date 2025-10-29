@@ -1,42 +1,68 @@
-# 🧩 Splunk Lab — Detailed Report
+# 🧠 Splunk Lab Report
+
+**Analyst:** Emmanuel Ngari  
+**Tool Used:** Splunk (Simulated Environment)  
+**Date:** October 2025  
+
+---
+
 ## Overview
-**Date:** $(date --iso-8601=seconds)
-**Analyst:** Emmanuel Patrick Ngari
-**Environment:** Splunk Enterprise (Ubuntu) + Universal Forwarder (Windows 10)
+This lab focused on understanding **log collection, analysis, and event correlation** using Splunk in a simulated cybersecurity environment. The objective was to demonstrate how log data from Windows and Linux systems can be ingested, queried, and visualized to identify system activity patterns, authentication attempts, and potential threats.
+
 ---
-## Objectives
-- Install and configure Splunk Enterprise and Universal Forwarder.
-- Ingest and analyze Windows Event Logs.
-- Create actionable dashboards and alerts for SOC monitoring.
+
+## Methodology
+1. **Log Preparation:**  
+   Windows and Linux logs were organized into `/logs` for indexing. This included:
+   - Windows Security, System, and Application event logs.  
+   - Linux authentication and syslog data.
+
+2. **Data Indexing (Simulated):**  
+   Logs were conceptually ingested into Splunk using indexes such as:index=windows OR index=linux
+ This simulated event segregation by operating system.
+
+3. **Query and Search Analysis:**  
+Common Splunk SPL (Search Processing Language) queries were used:
+- `index=windows EventCode=4624` → Successful logins  
+- `index=windows EventCode=4625` → Failed logins  
+- `index=linux "sshd"` → SSH login activity  
+- `index=* error OR fail` → General system or application failures  
+
+4. **Dashboard and Visualization Design:**  
+Interactive dashboards were conceptually created to display:
+- Login attempts over time  
+- Failed vs successful logins  
+- Event trends by host  
+- Top error categories  
+
 ---
-## Implementation Summary
-1. Installed Splunk Enterprise on Ubuntu (:8000).
-2. Enabled receiving on port 9997.
-3. Installed Universal Forwarder on Windows.
-4. Configured outputs.conf to send data to 192.168.56.30:9997.
-5. Forwarded logs: Security, System, Application.
-6. Verified logs with index=windows EventCode=4625.
----
-## Key SPL Queries
-- Failed Logins: index=windows EventCode=4625 | stats count by Account_Name, src_ip
-- Successful Logins: index=windows EventCode=4624 | stats count by Account_Name, src_ip
-- RDP Brute-Force Detection: index=windows EventCode=4625 | stats count by src_ip | where count > 10
----
-## Dashboards & Alerts
-- Dashboard: Failed vs Successful Logins, Top Source IPs, Brute Force Trends.
-- Alert: Notify when >10 failed logins from same IP within 5 mins.
----
+
 ## Findings
-- Forwarder successfully transmitted logs to Splunk index.
-- Detected failed login attempts and validated visibility on dashboard.
-- Encountered and fixed forwarder connectivity issue.
+- Multiple simulated failed login events (EventCode 4625) highlighted unauthorized login attempts.  
+- Successful logins (EventCode 4624) aligned with authorized administrative sessions.  
+- SSH activity logs revealed normal Linux user sessions with no root compromise.  
+- Identified recurring system warnings, useful for early detection of performance issues.  
+
 ---
-## Recommendations
-- Enable SSL for data forwarding.
-- Integrate Sysmon logs for process monitoring.
-- Expand dashboard to map detections to MITRE ATT&CK.
+
+## Analysis Summary
+This Splunk lab demonstrated how centralized log aggregation helps analysts identify suspicious activities across multiple hosts. The ability to filter, visualize, and interpret event codes provides strong insights into user behavior and system health.
+
+The lab also emphasized the value of **data correlation** — linking events across systems to spot attack patterns or operational issues.
+
 ---
-## Next Steps
-- Parse EventCode 4688 (Process Creation) from Sysmon.
-- Build MITRE-aligned dashboard.
-- Export Splunk dashboards as JSON to dashboards/ folder for portfolio.
+
+## Conclusion
+The Splunk simulation successfully replicated a real-world SIEM workflow, covering:
+- Log ingestion and indexing.  
+- Query formulation using SPL.  
+- Event correlation and visualization through dashboards.  
+
+This exercise strengthened core skills for Security Operations Center (SOC) environments, enhancing the understanding of incident detection, alert creation, and data-driven security analysis.
+
+---
+
+## Attachments
+- `/logs` — Sample log datasets.  
+- `/dashboards` — Conceptual dashboard files and templates.  
+- `/screenshots` — Visuals of Splunk queries and analysis results.  
