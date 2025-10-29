@@ -1,39 +1,60 @@
 # 🧠 Network Analysis Lab
 
-This project focuses on discovering, scanning, and analyzing hosts across a simulated enterprise network using **Nmap**, **Wireshark**, and **tcpdump**.  
-It demonstrates how to map a network, identify potential attack surfaces, and capture packets for in-depth inspection.
+This project focuses on analyzing network traffic using Wireshark, Nmap, and tcpdump to identify hosts, open ports, and suspicious activities. It demonstrates practical skills in packet capture, filtering, and threat detection — essential for any SOC Analyst.
 
 ---
 
-## 📋 Objectives
-- Identify live hosts using ICMP and ARP discovery.
-- Perform comprehensive TCP and UDP port scans.
-- Detect service versions and operating systems.
-- Capture and analyze packets using Wireshark and tcpdump.
-- Generate a detailed vulnerability summary report.
+## 🎯 Objectives
+- Identify live hosts and analyze network topology.
+- Capture and inspect network packets.
+- Perform comprehensive port and service scans using Nmap.
+- Analyze captured data for possible anomalies or threats.
+- Document findings and summarize security insights.
 
 ---
 
-## 📂 Folder Structure
-- **Network_Analysis_Report.md** → Detailed report of findings and recommendations.  
-- **reports/** → Raw scan outputs (`.txt` files).  
-- **screenshots/** → Visuals from Wireshark, Nmap, and terminal sessions.  
+## 🧰 Tools & Technologies
+- **Wireshark** – Packet capture and analysis.
+- **Nmap** – Network discovery and vulnerability scanning.
+- **tcpdump** – Command-line packet capture utility.
+- **Kali Linux / Ubuntu** – Lab environment for testing.
+- **VirtualBox Internal Network** – Isolated network setup for analysis.
 
 ---
 
-## 🧩 Tools Used
-- **Nmap** — Host discovery, port scanning, and OS detection.  
-- **Wireshark** — Deep packet inspection and traffic filtering.  
-- **tcpdump** — CLI-based capture and protocol analysis.  
+## ⚙️ Workflow
+1. **Host Discovery:**  
+   Used `nmap -sn 192.168.56.0/24` to identify active hosts.
+
+2. **Port Scanning:**  
+   Conducted a full TCP scan using `nmap -p- -sS -T4` to enumerate open ports.
+
+3. **Service Enumeration:**  
+   Verified service versions with `nmap -sV` to detect running applications.
+
+4. **Traffic Capture:**  
+   Captured live packets using Wireshark and `tcpdump` to analyze traffic patterns.
+
+5. **Filtering & Analysis:**  
+   Applied Wireshark filters (`tcp.port==80`, `ip.addr==192.168.56.10`) to focus on HTTP and host-specific activity.
 
 ---
 
-## 🧾 Summary
-This lab simulated a small corporate network, identifying open RDP (3389) and SMB (445) services.  
-Captured packets were analyzed to detect cleartext credentials and unencrypted protocols.  
-Recommendations included enforcing **TLS encryption**, **restricting RDP access**, and **enabling firewalls** on all hosts.
+## 📸 Screenshots
+Screenshots from this lab are stored in the `screenshots` folder:
+- Host discovery and port scans.
+- Wireshark filtered sessions.
+- Protocol analysis and summary.
 
 ---
 
-**Author:** Emmanuel Patrick Ngari  
-**Date:** $(date +"%Y-%m-%d")
+## 📄 Report
+Detailed documentation of the experiment can be found in:
+[`Network_Analysis_Report.md`](./Network_Analysis_Report.md)
+
+---
+
+## 🧩 Key Takeaways
+- Enhanced understanding of network behavior and communication flow.
+- Improved ability to identify suspicious packets and host activity.
+- Demonstrated proficiency in Nmap and Wireshark usage for network reconnaissance.
