@@ -163,5 +163,5 @@ This portfolio documents that journey.
 ---
 
 ## Connect With Me
-GitHub: @Emmanuel-Ngari⁠
-LinkedIn: @emmanuel-ngari
+- **GitHub: @Emmanuel-Ngari⁠**
+- **LinkedIn: @emmanuel-ngari**
