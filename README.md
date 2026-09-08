@@ -99,7 +99,7 @@ The lab is isolated from external systems and is used to practice:
 
 ---
 
-## 📈 Current Learning Path
+## Current Learning Path
 **Cybersecurity Fundamentals**  
 ↓  
 **Networking Fundamentals**  
@@ -164,3 +164,4 @@ This portfolio documents that journey.
 
 ## Connect With Me
 GitHub: @Emmanuel-Ngari⁠
+LinkedIn: @emmanuel-ngari
