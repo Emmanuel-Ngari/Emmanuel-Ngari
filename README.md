@@ -101,28 +101,29 @@ The lab is isolated from external systems and is used to practice:
 
 ## 📈 Current Learning Path
 
-```text
-Cybersecurity Fundamentals
-          ↓
-Networking Fundamentals
-          ↓
-Linux & Windows Administration
-          ↓
-Network Security
-          ↓
-Security Operations (SOC)
-          ↓
-Blue Team & Defensive Security
-          ↓
-Incident Response & Threat Detection
-          ↓
-Offensive Security & Ethical Hacking
-          ↓
-Penetration Testing
-          ↓
-Advanced Red Team Operations
-          ↓
-Advanced Cybersecurity Professional
+## 📈 Current Learning Path
+
+**Cybersecurity Fundamentals**  
+↓  
+**Networking Fundamentals**  
+↓  
+**Linux & Windows Administration**  
+↓  
+**Network Security**  
+↓  
+**Security Operations (SOC)**  
+↓  
+**Blue Team & Defensive Security**  
+↓  
+**Incident Response & Threat Detection**  
+↓  
+**Offensive Security & Ethical Hacking**  
+↓  
+**Penetration Testing**  
+↓  
+**Advanced Red Team Operations**  
+↓  
+**Advanced Cybersecurity Professional**
 
 ---
 
