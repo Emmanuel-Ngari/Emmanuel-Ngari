@@ -1,4 +1,4 @@
-# Emmanuel Ngari
+# Emmanuel Patrick Ngari
 
 ### Cybersecurity | Network Security | Blue Team | Red Team
 
