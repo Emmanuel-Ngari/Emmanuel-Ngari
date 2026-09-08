@@ -100,9 +100,6 @@ The lab is isolated from external systems and is used to practice:
 ---
 
 ## 📈 Current Learning Path
-
-## 📈 Current Learning Path
-
 **Cybersecurity Fundamentals**  
 ↓  
 **Networking Fundamentals**  
@@ -128,21 +125,39 @@ The lab is isolated from external systems and is used to practice:
 ---
 
 ## Featured Projects
+
 More projects will be added as I progress through my cybersecurity training.
-Cybersecurity Homelab
-Network Security Labs
-SOC / Blue Team Labs
-Penetration Testing Labs
-Incident Response Labs
-Linux Security Labs
-Windows Security Labs
+
+-  **Cybersecurity Homelab**
+-  **Network Security Labs**
+-  **SOC / Blue Team Labs**
+-  **Penetration Testing Labs**
+-  **Incident Response Labs**
+-  **Linux Security Labs**
+-  **Windows Security Labs**
 
 ---
 
 ## My Approach
+
 I believe cybersecurity is best learned through practical experience.
+
 My learning process:
-Learn → Build → Break → Troubleshoot → Fix → Test → Document
+
+**Learn**  
+↓  
+**Build**  
+↓  
+**Break**  
+↓  
+**Troubleshoot**  
+↓  
+**Fix**  
+↓  
+**Test**  
+↓  
+**Document**
+
 This portfolio documents that journey.
 
 ---
