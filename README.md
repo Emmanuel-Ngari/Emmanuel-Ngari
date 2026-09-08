@@ -100,33 +100,33 @@ The lab is isolated from external systems and is used to practice:
 ---
 
 ##  Current Learning Path
-Networking
+-Networking
      ↓
-Linux & Windows Administration
+-Linux & Windows Administration
      ↓
-Cybersecurity Fundamentals
+-Cybersecurity Fundamentals
      ↓
-Network Security
+-Network Security
      ↓
-Blue Team / SOC
+-Blue Team / SOC
      ↓
-Incident Response
+-Incident Response
      ↓
-Offensive Security
+-Offensive Security
      ↓
-Advanced Penetration Testing
+-Advanced Penetration Testing
 
 ---
 
 ## Featured Projects
 More projects will be added as I progress through my cybersecurity training.
-Cybersecurity Homelab
-Network Security Labs
-SOC / Blue Team Labs
-Penetration Testing Labs
-Incident Response Labs
-Linux Security Labs
-Windows Security Labs
+-Cybersecurity Homelab
+-Network Security Labs
+-SOC / Blue Team Labs
+-Penetration Testing Labs
+-Incident Response Labs
+-Linux Security Labs
+-Windows Security Labs
 
 ---
 
