@@ -1,167 +1,495 @@
-# Emmanuel Patrick Ngari
+# Emmanuel Ngari
 
-### Cybersecurity | Network Security | Blue Team | Red Team
+Cybersecurity | Network Security | Blue Team | Red Team | Homelab Engineering
 
-Welcome to my cybersecurity portfolio.
+I am building practical cybersecurity skills through hands-on labs, network engineering, Linux and Windows administration, defensive security, ethical hacking, threat detection, and incident response.
 
-I am building practical cybersecurity skills through structured learning, hands-on labs, and real-world security scenarios. My focus is developing both **defensive (Blue Team)** and **offensive (Red Team)** capabilities while building a strong foundation in networking, Linux, Windows, and security operations.
+My goal is to understand cybersecurity from both the attacker and defender perspectives by designing realistic environments, securing them, testing them, troubleshooting problems, monitoring activity, and documenting the entire process.
 
 ---
 
-## Cybersecurity Focus
+## About Me
+
+- Building a professional offensive and defensive cybersecurity homelab
+- Developing practical Red Team and Blue Team skills
+- Learning enterprise-style network segmentation and firewall engineering
+- Building experience with Linux and Windows administration
+- Practicing network security, ethical hacking, detection, and incident response
+- Documenting practical cybersecurity projects on GitHub
+
+My learning methodology:
+
+**Learn → Build → Break → Troubleshoot → Fix → Test → Document → Repeat**
+
+---
+
+## Current Focus
+
+My current focus areas include:
 
 - Network Security
-- Defensive Security / Blue Team
-- Offensive Security / Red Team
-- Security Operations (SOC)
+- Firewall Engineering
+- Linux Administration
+- Windows Administration
+- Blue Team Operations
+- Red Team Fundamentals
+- SOC Operations
+- Threat Detection
 - Incident Response
-- Vulnerability Assessment
+- Ethical Hacking
 - Penetration Testing
-- Linux & Windows Security
-- Threat Detection & Analysis
+- Detection Engineering
+
+---
+
+## Featured Project
+
+### Cybersecurity Homelab
+
+My flagship project is a segmented offensive and defensive cybersecurity homelab built using:
+
+- Oracle VirtualBox
+- OPNsense
+- Kali Linux
+- Windows 11 Enterprise
+- Ubuntu Server
+
+The lab has evolved from a basic flat network into a segmented architecture with centralized firewalling, routing, NAT, DNS, security policies, and controlled attack paths.
+
+Repository:
+
+**`cybersecurity-homelab`**
+
+---
+
+## Current Homelab Architecture
+
+The current environment contains three internal security zones protected by OPNsense.
+
+| Zone | Network | Purpose |
+|---|---|---|
+| REDNET | `10.10.10.0/24` | Offensive Security |
+| CORPNET | `10.10.20.0/24` | Management / Defensive Endpoint |
+| SERVERNET | `10.10.30.0/24` | Protected Servers |
+
+### Core Systems
+
+| System | Operating System | Role | Address |
+|---|---|---|---|
+| `LAB-FW-01` | OPNsense | Firewall / Router / Security Gateway | Multiple Interfaces |
+| `LAB-KALI-01` | Kali Linux | Offensive Security Workstation | `10.10.10.10` |
+| `LAB-WIN-01` | Windows 11 Enterprise | Management / Defensive Endpoint | `10.10.20.20` |
+| `LAB-UBUNTU-01` | Ubuntu Server | Protected Linux Server | `10.10.30.30` |
+
+All inter-zone communication passes through OPNsense.
+
+Direct VirtualBox NAT access on Kali, Windows, and Ubuntu has been disabled so internal traffic must use the firewall.
+
+---
+
+## What I Have Built
+
+### Network Engineering
+
+- Static IPv4 addressing
+- Routing
+- Default gateway configuration
+- DNS configuration
+- VirtualBox networking
+- Internal network segmentation
+- Multi-zone network architecture
+- Connectivity testing
+- Route troubleshooting
+- NAT validation
+
+### OPNsense Firewall
+
+- Dedicated WAN interface
+- CORPNET security zone
+- REDNET security zone
+- SERVERNET security zone
+- Host aliases
+- Network aliases
+- Service aliases
+- Least-privilege firewall rules
+- Stateful firewall policies
+- Outbound NAT
+- DNS services
+- NTP services
+- Firewall management restrictions
+- Inter-zone segmentation
+- Security logging
+- Configuration backups
+
+### Linux
+
+- Kali Linux
+- Ubuntu Server
+- Linux networking
+- NetworkManager
+- Netplan
+- SSH
+- Bash
+- Service management
+- Linux troubleshooting
+
+### Windows
+
+- Windows 11 Enterprise
+- PowerShell
+- Windows networking
+- Routing
+- DNS troubleshooting
+- Windows Firewall
+- Endpoint administration
+- Network diagnostics
+
+---
+
+## Validated Security Controls
+
+The current lab has been tested to confirm that firewall policy behaves as designed.
+
+| Source | Destination | Result |
+|---|---|---|
+| Windows | OPNsense HTTPS | ALLOW |
+| Windows | Ubuntu SSH | ALLOW |
+| Windows | Kali | BLOCK |
+| Kali | Ubuntu | ALLOW |
+| Kali | Windows | BLOCK |
+| Kali | OPNsense Management | BLOCK |
+| Ubuntu | Windows | BLOCK |
+| Ubuntu | Kali | BLOCK |
+
+The environment therefore supports controlled offensive-security activity without giving the attacker network unrestricted access to trusted systems.
+
+---
+
+## Controlled Attack Path
+
+The primary authorized offensive-security path is:
+
+**Kali → REDNET → OPNsense → SERVERNET → Ubuntu**
+
+This path is used for controlled:
+
+- Reconnaissance
+- Port scanning
+- Enumeration
+- Vulnerability assessment
+- Service discovery
+- Ethical hacking
+- Future exploitation exercises
+
+Nmap testing has confirmed SSH exposure on the Ubuntu target through the authorized firewall path.
+
+---
+
+## Controlled Administrative Path
+
+The trusted administrative path is:
+
+**Windows → CORPNET → OPNsense → SERVERNET → Ubuntu**
+
+This allows approved server-management traffic while keeping other inter-zone communication restricted.
 
 ---
 
 ## Technical Skills
 
-### Operating Systems
-- Linux
-- Ubuntu Server
-- Kali Linux
-- Windows
-
 ### Networking
+
 - TCP/IP
-- IPv4 / IPv6
+- IPv4
 - Subnetting
 - Routing
+- NAT
 - DNS
-- DHCP
-- Network Security
-- Virtual Networking
+- DHCP fundamentals
+- ICMP
+- TCP
+- UDP
+- Network segmentation
+- Firewall policy design
+- Connectivity troubleshooting
 
-### Security
-- Security Monitoring
-- Log Analysis
-- Incident Response
-- Vulnerability Assessment
-- Penetration Testing
-- Threat Analysis
+### Operating Systems
 
-### Tools & Technologies
-- Git & GitHub
-- VirtualBox
-- Wireshark
-- Nmap
-- Linux Command Line
-- PowerShell
-- Windows Security Tools
+- Kali Linux
+- Ubuntu Server
+- Windows 11 Enterprise
+- OPNsense
 
----
+### Offensive Security
 
-## Cybersecurity Homelab
-
-I maintain a dedicated cybersecurity laboratory for hands-on learning and experimentation.
-
-### Current Environment
-
-| System | Role | Network |
-|---|---|---|
-| Kali Linux | Offensive Security | LAB-NET |
-| Windows 11 | Windows Endpoint | LAB-NET |
-| Ubuntu Server | Linux Server | LAB-NET |
-
-The lab is isolated from external systems and is used to practice:
-
-- Network reconnaissance
+- Reconnaissance
+- Network scanning
+- Service enumeration
 - Vulnerability assessment
-- System hardening
-- Network monitoring
-- Incident response
-- Linux administration
-- Windows security
-- Attack & defense scenarios
+- Ethical hacking fundamentals
+- Penetration-testing fundamentals
 
-➡️ **[View my Cybersecurity Homelab](https://github.com/Emmanuel-Ngari/cybersecurity-homelab)**
+### Defensive Security
+
+- Firewall administration
+- Network segmentation
+- Security logging
+- Endpoint monitoring fundamentals
+- Blue Team fundamentals
+- SOC fundamentals
+- Incident-response fundamentals
 
 ---
 
-## Certifications & Learning
+## Tools and Technologies
+
+### Infrastructure and Networking
+
+- Oracle VirtualBox
+- OPNsense
+- TCP/IP
+- DNS
+- NAT
+- SSH
+
+### Offensive Security
+
+- Kali Linux
+- Nmap
+- Burp Suite
+- Metasploit
+- Netcat
+- Gobuster
+- Wireshark
+
+### Defensive Security
+
+- OPNsense
+- Windows Event Viewer
+- PowerShell
+- Linux logs
+- Firewall logs
+- Wireshark
+
+### Planned Security Stack
+
+- Wazuh
+- Sysmon
+- Suricata
+- Linux auditd
+- Windows Event Forwarding
+- Velociraptor
+
+---
+
+## Cybersecurity Learning Roadmap
+
+My development path is focused on building capabilities across both offensive and defensive cybersecurity.
+
+Cybersecurity Fundamentals  
+↓  
+Networking Fundamentals  
+↓  
+Linux & Windows Administration  
+↓  
+Network Security  
+↓  
+Firewall Engineering  
+↓  
+SOC / Blue Team  
+↓  
+Threat Detection  
+↓  
+Incident Response  
+↓  
+Offensive Security  
+↓  
+Penetration Testing  
+↓  
+Advanced Red Team and Blue Team Operations
+
+---
+
+## Upcoming Homelab Development
+
+The next stages of the lab include:
+
+- SOC-NET
+- Wazuh SIEM
+- Centralized logging
+- Windows Sysmon
+- Windows security telemetry
+- Linux audit logging
+- OPNsense log forwarding
+- Suricata IDS
+- IDS alert analysis
+- IPS experimentation
+- Active Directory
+- Windows Server
+- Domain Controller
+- Group Policy
+- Active Directory attack simulation
+- Detection engineering
+- Vulnerable applications
+- DMZ architecture
+- Threat hunting
+- Incident-response exercises
+
+The long-term workflow is:
+
+**Attack → Detect → Investigate → Respond → Remediate → Retest**
+
+---
+
+## Planned SOC Architecture
+
+A future dedicated SOC network is planned.
+
+**SOC-NET:** `10.10.40.0/24`
+
+Potential components include:
+
+- Wazuh Manager
+- Wazuh Indexer
+- Wazuh Dashboard
+- Centralized log collection
+- Detection engineering
+- Security monitoring
+- Alert investigation
+
+Telemetry will eventually be collected from:
+
+- Windows
+- Ubuntu
+- OPNsense
+- Suricata
+- Active Directory systems
+
+---
+
+## Planned Active Directory Lab
+
+A future enterprise identity environment will include:
+
+- Windows Server
+- Active Directory Domain Services
+- Domain Controller
+- DNS
+- Group Policy
+- Domain users
+- Domain computers
+- Kerberos
+- Windows authentication logging
+
+Proposed network:
+
+**AD-NET:** `10.10.50.0/24`
+
+The lab will support both Active Directory attack simulation and defensive detection.
+
+---
+
+## Planned DMZ
+
+A future DMZ will provide a separate environment for intentionally vulnerable and public-facing lab services.
+
+Proposed network:
+
+**DMZ-NET:** `10.10.60.0/24`
+
+Potential targets include:
+
+- OWASP Juice Shop
+- DVWA
+- Linux web servers
+- APIs
+- Intentionally vulnerable applications
+
+---
+
+## Certifications and Learning
 
 ### Completed
+
 - Google Cybersecurity Professional Certificate
 
-### Current Roadmap
-- CCNA
-- CompTIA Security+
-- Microsoft SC-200
-- Advanced Offensive Security Certification
+### Current and Planned Development
+
+- Networking and CCNA-level knowledge
+- Security fundamentals
+- Network security
+- SOC operations
+- Blue Team operations
+- Ethical hacking
+- Penetration testing
+- Incident response
+- Detection engineering
 
 ---
 
-## Current Learning Path
-**Cybersecurity Fundamentals**  
-↓  
-**Networking Fundamentals**  
-↓  
-**Linux & Windows Administration**  
-↓  
-**Network Security**  
-↓  
-**Security Operations (SOC)**  
-↓  
-**Blue Team & Defensive Security**  
-↓  
-**Incident Response & Threat Detection**  
-↓  
-**Offensive Security & Ethical Hacking**  
-↓  
-**Penetration Testing**  
-↓  
-**Advanced Red Team Operations**  
-↓  
-**Advanced Cybersecurity Professional**
+## GitHub Goals
+
+I use GitHub to document practical cybersecurity work including:
+
+- Homelab architecture
+- Network configurations
+- Firewall configurations
+- Security policies
+- Troubleshooting
+- Offensive-security exercises
+- Defensive-security exercises
+- Detection engineering
+- Scripts
+- Incident-response labs
+- Cybersecurity learning notes
+
+The goal is to build a portfolio that demonstrates both technical understanding and practical implementation.
 
 ---
 
-## Featured Projects
+## Professional Interests
 
-More projects will be added as I progress through my cybersecurity training.
+I am particularly interested in:
 
--  **Cybersecurity Homelab**
--  **Network Security Labs**
--  **SOC / Blue Team Labs**
--  **Penetration Testing Labs**
--  **Incident Response Labs**
--  **Linux Security Labs**
--  **Windows Security Labs**
+- Cybersecurity
+- Network Security
+- Security Operations
+- Blue Team
+- Red Team
+- SOC Operations
+- Threat Detection
+- Ethical Hacking
+- Penetration Testing
+- Incident Response
+- Digital Forensics
+- Detection Engineering
+- Security Architecture
+- Active Directory Security
 
 ---
 
-## My Approach
+## Current Mission
 
-I believe cybersecurity is best learned through practical experience.
+My goal is to progress beyond understanding cybersecurity concepts and become capable of designing, securing, attacking, monitoring, troubleshooting, and defending realistic environments.
 
-My learning process:
+I am building that capability one lab at a time.
 
-**Learn**  
-↓  
-**Build**  
-↓  
-**Break**  
-↓  
-**Troubleshoot**  
-↓  
-**Fix**  
-↓  
-**Test**  
-↓  
-**Document**
-
-This portfolio documents that journey.
+**Learn → Build → Break → Troubleshoot → Fix → Test → Document → Repeat**
 
 ---
 
 ## Connect With Me
-- **GitHub: @Emmanuel-Ngari⁠**
-- **LinkedIn: @emmanuel-ngari**
+
+### GitHub
+
+**Emmanuel-Ngari**
+
+### LinkedIn
+
+**Emmanuel Ngari**
+
+[linkedin.com/in/emmanuel-ngari](https://www.linkedin.com/in/emmanuel-ngari)
+
+LinkedIn username:
+
+`emmanuel-ngari`
