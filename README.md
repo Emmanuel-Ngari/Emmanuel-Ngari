@@ -10,7 +10,7 @@ I believe strong cybersecurity professionals should understand both sides of an 
 
 ---
 
-## 🔗 Connect With Me
+##  Connect With Me
 
 [![GitHub](https://img.shields.io/badge/GitHub-Emmanuel--Ngari-black?logo=github)](https://github.com/Emmanuel-Ngari)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Emmanuel%20Ngari-blue?logo=linkedin)](https://www.linkedin.com/in/emmanuel-ngari/)
@@ -93,7 +93,7 @@ Central routing and firewalling are handled by:
 
 ---
 
-# 🔍 What I Built
+#  What I Built
 
 ## Network Security
 
@@ -216,7 +216,7 @@ My detection workflow follows:
 
 ---
 
-# ⚔️ Purple Team Methodology
+#  Purple Team Methodology
 
 My lab has now transitioned from infrastructure building into realistic Purple Team operations.
 
@@ -287,7 +287,7 @@ Current and future scenarios include:
 
 ---
 
-# 📚 Current Development Path
+#  Current Development Path
 
 I am building toward professional Purple Team capability through a structured combination of offensive and defensive security.
 
@@ -320,7 +320,7 @@ I am building toward professional Purple Team capability through a structured co
 
 ---
 
-# 🎓 Certifications & Training
+#  Certifications & Training
 
 - Google Cybersecurity Professional Certificate
 - Hands-on cybersecurity lab development
