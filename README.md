@@ -1,4 +1,4 @@
-# Hi, I'm Emmanuel Ngari 👋
+# Hi, I'm Emmanuel Ngari
 
 ### Cybersecurity | Purple Team | SOC Operations | Detection Engineering
 
@@ -18,7 +18,7 @@ I believe strong cybersecurity professionals should understand both sides of an 
 
 ---
 
-# 🛡️ Cybersecurity Focus
+# Cybersecurity Focus
 
 My current technical focus includes:
 
@@ -38,7 +38,7 @@ My current technical focus includes:
 
 ---
 
-# 🚀 Featured Project
+#  Featured Project
 
 ## Enterprise Purple Team Cybersecurity Home Lab
 
@@ -76,7 +76,7 @@ It later evolved into a complete six-zone architecture with:
 
 ---
 
-# 🏗️ Final Lab Architecture
+#  Final Lab Architecture
 
 | Security Zone | Network | Primary System | Purpose |
 |---|---|---|---|
@@ -198,7 +198,7 @@ Built a dedicated Ubuntu/Nginx DMZ server with:
 
 ---
 
-# 🧠 Detection Engineering
+#  Detection Engineering
 
 I have built and validated detections from multiple telemetry sources.
 
@@ -252,7 +252,7 @@ Current and future scenarios include:
 
 ---
 
-# 🧰 Technologies & Tools
+#  Technologies & Tools
 
 ## SIEM / Detection
 
@@ -336,7 +336,7 @@ rather than collecting unrelated certifications.
 
 ---
 
-# 🧪 Current Project Status
+#  Current Project Status
 
 ## Infrastructure
 
@@ -367,7 +367,7 @@ rather than collecting unrelated certifications.
 
 ---
 
-# 📂 Project Documentation
+#  Project Documentation
 
 The Cybersecurity Home Lab repository contains dedicated documentation for:
 
@@ -393,7 +393,7 @@ including troubleshooting, design changes, failed approaches, and final validati
 
 ---
 
-# 🎯 Career Direction
+#  Career Direction
 
 I am working toward roles including:
 
@@ -408,7 +408,7 @@ My long-term objective is to develop deep capability in both offensive and defen
 
 ---
 
-# 💡 Security Philosophy
+#  Security Philosophy
 
 I do not consider a security control complete just because it was installed.
 
@@ -430,7 +430,7 @@ That mindset drives my cybersecurity projects.
 
 ---
 
-# 🤝 Connect With Me
+#  Connect With Me
 
 - GitHub: [github.com/Emmanuel-Ngari](https://github.com/Emmanuel-Ngari)
 - LinkedIn: [linkedin.com/in/emmanuel-ngari](https://www.linkedin.com/in/emmanuel-ngari/)
